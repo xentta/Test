@@ -1,11 +1,14 @@
 <div class="container">
-    <h2>Личный кабинет</h2>
+    <div class="disp">
+        <h2>Личный кабинет</h2>
+        <input type="text" class="input_edit left" placeholder="Поиск..." [(ngModel)]="search">
+    </div>
     <hr>
     <app-fotm-contact
             (onAdd)="updateContact($event)"
     ></app-fotm-contact>
     <hr>
-    <input type="text" class="input_edit" placeholder="Поиск..." [(ngModel)]="search">
+
     <app-contact
             (onRemove)="removeContact($event)"
             (onUpdate)="update($event)"

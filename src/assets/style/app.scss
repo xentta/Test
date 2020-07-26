@@ -4,16 +4,19 @@ body {
   box-sizing: border-box;
   font-family: Tahoma;
 }
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
+
 .container {
   width: 100vw;
   max-width: 1200px;
   margin: 20px auto;
   text-align: center;
 }
-.btn-dark{
+
+.btn-dark {
   width: 180px;
   height: 40px;
   line-height: 40px;
@@ -22,18 +25,73 @@ h1, h2, h3, h4, h5, h6 {
   margin: 5px 20px;
   font-size: 1.2rem;
 }
-.btn-dark:hover{
+
+.btn-dark:hover {
   cursor: pointer;
   background: #DEDEDE;
 }
-.edit{
+
+.edit {
   margin: 20px 20px;
 }
-.input_edit{
+
+.input_edit {
   margin: 5px 20px;
 
   border-radius: 5px;
   width: 200px;
   padding: 5px;
   font-size: 1.2rem;
+}
+
+.container_contact {
+  border: 1px dashed cadetblue;
+  width: 700px;
+  height: auto;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+.disp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-danger {
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 20px;
+  font-size: 1.2rem;
+  background: #b24138;
+  color: white;
+  transition: all .3s linear;
+  box-shadow: 0 1px 3px 1px;
+}
+
+.btn-danger:hover {
+  cursor: pointer;
+  color: black;
+  background: whitesmoke;
+}
+.btn-edit{
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 20px;
+  font-size: 1.2rem;
+  background: mediumaquamarine;
+  color: white;
+  transition: all .3s linear;
+  box-shadow: 0 1px 3px 1px;
+  outline: none;
+}
+.btn-edit:hover {
+  cursor: pointer;
+  color: black;
+  background: whitesmoke;
 }

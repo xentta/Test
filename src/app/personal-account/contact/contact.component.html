@@ -1,15 +1,15 @@
-<div class="container">
+<div class="container_contact">
     <p class="id">{{'ID: ' + contact.id}}</p>
     <h3>{{'Имя контакта: ' + contact.name}}</h3>
     <p>{{'Телефон: ' + contact.phone}}</p>
     <div *ngIf="toggle" class="edit">
-        <h1>Редактировать</h1>
+        <h3>Редактировать</h3>
         <input [(ngModel)]="nameEdit" class="input_edit" placeholder="Имя" type="text">
         <input [(ngModel)]="phoneEdit" class="input_edit" placeholder="Телефон" type="text">
         <input [(ngModel)]="editID" class="input_edit" placeholder="ID" type="hidden">
         <button (click)="updateContact()" class="btn-dark">Обновить</button>
     </div>
-    <button (click)="removeContact()" class="btn-dark">Удалить</button>
-    <button (click)="editContact()" class="btn-dark">Редактировать</button>
+    <button (click)="removeContact()" class="btn-danger">Удалить</button>
+    <button (click)="editContact()" class="btn-edit">Редактировать</button>
 </div>
-<hr>
+
