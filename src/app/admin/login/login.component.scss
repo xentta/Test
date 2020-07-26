@@ -1,0 +1,56 @@
+h2 {
+  font-size: 3rem;
+  font-family: Roboto;
+  margin-bottom: 10px;
+}
+
+.wrap {
+  width: 500px;
+  min-width: 300px;
+  margin: 7% auto;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Lucida Sans";
+  font-style: normal;
+  font-weight: normal;
+}
+
+form {
+  margin-top: 5%;
+}
+
+.input {
+  width: 375px;
+  height: 25px;
+  border: 0px solid #DEDEDE;
+  border-bottom: 1px solid #DEDEDE;
+  padding: 10px;
+  margin-top: 5%;
+}
+
+.btn {
+  width: 400px;
+  height: 44px;
+  margin-top: 8%;
+  color: black;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.href {
+  text-decoration: none;
+  color: black;
+  font-family: Roboto;
+  font-size: 1.1rem;
+}
+
+.text-danger {
+  color: red;
+}
+

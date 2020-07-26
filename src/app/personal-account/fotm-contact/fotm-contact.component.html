@@ -1,0 +1,24 @@
+<div class="container">
+    <input
+            [(ngModel)]="name"
+            class="input_edit"
+            placeholder="Имя контакта..."
+            type="text"
+    >
+    <br><br>
+    <input
+            [(ngModel)]="phone"
+            class="input_edit"
+            placeholder="Телефон..."
+            type="text"
+    >
+    <br><br>
+    <input
+            [(ngModel)]="id"
+            class="input_edit"
+            placeholder="ID..."
+            type="text"
+    >
+    <br><br>
+    <button (click)="addContact()" class="btn btn-dark">Добавить контакт</button>
+</div>

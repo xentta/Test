@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>Контакты</h2>
+    <app-fotm-contact
+            (onAdd)="updateContact($event)"
+    ></app-fotm-contact>
+    <hr>
+    <input type="text" class="input_edit" placeholder="Поиск..." [(ngModel)]="search">
+    <app-contact
+            (onRemove)="removeContact($event)"
+            (onUpdate)="update($event)"
+            *ngFor="let c of contacts | filter:search"
+            [contact]="c"
+    ></app-contact>
+</div>

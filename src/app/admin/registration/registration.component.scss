@@ -1,0 +1,67 @@
+h2 {
+  font-size: 3rem;
+  font-family: Roboto;
+  margin-bottom: 10px;
+}
+
+.wrap {
+  width: 700px;
+  min-width: 300px;
+  margin: 1% auto;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Lucida Sans";
+  font-style: normal;
+  font-weight: normal;
+
+}
+
+form {
+  margin-top: 5%;
+}
+
+.input {
+  width: 400px;
+  height: 25px;
+  border: 0px solid #DEDEDE;
+  border-bottom: 1px solid #DEDEDE;
+  padding: 10px;
+  margin-top: 5%;
+
+}
+
+.btn {
+  width: 400px;
+  height: 44px;
+  margin-top: 8%;
+  color: black;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+.href {
+  text-decoration: none;
+  color: black;
+  font-family: Roboto;
+  font-size: 1.1rem;
+}
+
+.checkbox {
+  width: 400px;
+  height: 25px;
+  border: 0px solid #DEDEDE;
+  border-bottom: 1px solid #DEDEDE;
+  padding: 10px;
+  margin-top: 5%;
+
+}
+
+label {
+  font-size: .9rem;
+}
+
+.text-danger {
+  color: red;
+}

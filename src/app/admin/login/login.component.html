@@ -1,0 +1,49 @@
+<div class="wrap">
+    <div>
+        <h2 data-aos="fade-down-right" data-aos-delay="500" data-aos-duration="1000">Вход</h2>
+        <a data-aos="fade-left" data-aos-delay="800" data-aos-duration="1100">Введите свои данные</a>
+    </div>
+    <form (ngSubmit)="submit()" [formGroup]="form" data-aos="flip-left" data-aos-delay="1500" data-aos-duration="2000">
+        <div>
+            <input class="input" formControlName="email" placeholder="Email" type="email">
+            <div
+                    *ngIf="form.get('email').invalid && form.get('email').touched"
+                    class="validation">
+                <small *ngIf="form.get('email').errors.required" class="text-danger">
+                    Заполните поле email
+                </small>
+                <small *ngIf="form.get('email').errors.email" class="text-danger">
+                    Введите корректный email
+                </small>
+            </div>
+        </div>
+        <div>
+            <input class="input" formControlName="password" placeholder="Пароль" type="password">
+            <div
+                    *ngIf="form.get('password').invalid && form.get('password').touched"
+                    class="validation">
+                <small *ngIf="form.get('password').errors.required" class="text-danger">
+                    Введите пароль
+                </small>
+                <small *ngIf="form.get('password').errors.minlength" class="text-danger">
+                    Пароль должен быть больше
+                    {{form.get('password').errors.minlength.requiredLength}}
+                    символов, сейчас
+                    {{form.get('password').errors.minlength.actualLength}}
+                </small><br>
+                <small *ngIf="form.get('password').errors.pattern" class="text-danger">
+                    Пароль должен содержать строчные и заглавные латинские буквы, а так же цифры
+                </small>
+            </div>
+        </div>
+
+        <button [disabled]="form.invalid || !check" class="btn" type="submit">ВОЙТИ</button>
+    </form>
+    <div *ngIf="message" class="text-danger">
+        <h3>Пользователь с таким email не зарегистрирован</h3>
+    </div>
+    <p data-aos="fade-up" data-aos-delay="2000" data-aos-duration="1000" style="color: #939292; margin-top: 5%">Нет
+        аккаунта? <a class="href" routerLink=""> Зарегистрироваться</a></p>
+</div>
+
+
