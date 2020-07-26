@@ -9,7 +9,7 @@ import {AppRoutingModule} from './app-routing.module';
 import { RegistrationSuccessComponent } from './admin/registration-success/registration-success.component';
 import { ContactComponent } from './Personal-account/contact/contact.component';
 import { PersonalAccountComponent } from './personal-account/personal-account.component';
-import { FotmContactComponent } from './personal-account/fotm-contact/fotm-contact.component';
+import { FormContactComponent } from './personal-account/form-contact/form-contact.component';
 import { FilterPipe } from './filter.pipe';
 
 
@@ -21,7 +21,7 @@ import { FilterPipe } from './filter.pipe';
     RegistrationSuccessComponent,
     ContactComponent,
     PersonalAccountComponent,
-    FotmContactComponent,
+    FormContactComponent,
     FilterPipe
   ],
   imports: [

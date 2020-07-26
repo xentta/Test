@@ -10,7 +10,7 @@ export class FilterPipe implements PipeTransform {
             return contacts;
         }
         return contacts.filter((contact) => {
-            return contact.name.includes(search);
+            return contact.name.toLocaleLowerCase().includes(search);
         });
     }
 

@@ -10,7 +10,6 @@ import {Router} from '@angular/router';
 })
 export class RegistrationComponent implements OnInit {
     form: FormGroup;
-    check = false;
 
     constructor(private router: Router) {
     }
@@ -22,11 +21,8 @@ export class RegistrationComponent implements OnInit {
     initForm() {
         this.form = new FormGroup({
                 name: new FormControl(null, [Validators.required, Validators.minLength(4)]),
-                nikName: new FormControl(null, [Validators.required, Validators.minLength(5)]),
                 email: new FormControl(null, [Validators.required, Validators.email]),
-                phone: new FormControl(null, [Validators.required, Validators.pattern('8-[0-9]{10}')]),
-                password: new FormControl(null, [Validators.required, Validators.minLength(6), Validators.pattern('(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])\\S{6,}')]),
-                check: new FormControl(null, [Validators.required])
+                password: new FormControl(null, [Validators.required, Validators.minLength(6), Validators.pattern('(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])\\S{6,}')])
             }
         );
     }
@@ -46,7 +42,6 @@ export class RegistrationComponent implements OnInit {
         console.log(consoleLog);
 
         this.form.reset();
-        this.check = false;
 
         setTimeout(() => this.router.navigate(['', 'registration-success']), 2000);
         setTimeout(() => this.router.navigate(['', 'login']), 6000);

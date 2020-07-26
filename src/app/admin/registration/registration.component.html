@@ -21,22 +21,7 @@
                 </small>
             </div>
         </div>
-        <div>
-            <input class="input" formControlName="nikName" placeholder="Никнейм" type="text">
-            <div
-                    *ngIf="form.get('nikName').invalid && form.get('nikName').touched"
-            >
-                <small *ngIf="form.get('nikName').errors.required" class="text-danger">
-                    Введите ваш Никнейм
-                </small>
-                <small *ngIf="form.get('nikName').errors.minlength" class="text-danger">
-                    Никнейм должен быть не меньше
-                    {{form.get('nikName').errors.minlength.requiredLength}}
-                    символов, сейчас
-                    {{form.get('nikName').errors.minlength.actualLength}}
-                </small>
-            </div>
-        </div>
+
         <div>
             <input class="input" formControlName="email" placeholder="Email" type="email">
             <div
@@ -50,19 +35,7 @@
                 </small>
             </div>
         </div>
-        <div>
-            <input class="input" formControlName="phone" placeholder="Телефон: 8-XXXXXXXXXX" type="tel">
-            <div
-                    *ngIf="form.get('phone').invalid && form.get('phone').touched"
-            >
-                <small *ngIf="form.get('phone').errors.required" class="text-danger">
-                    Введите ваш телефон
-                </small>
-                <small *ngIf="form.get('phone').errors.pattern" class="text-danger">
-                    Введите ваш телефон в формате: 8 - XXXXXXXXXX
-                </small>
-            </div>
-        </div>
+
         <div>
             <input class="input" formControlName="password" placeholder="Пароль" type="password">
             <div
@@ -83,11 +56,7 @@
             </div>
         </div>
         <br>
-        <input [(ngModel)]="check" class="checkbox" formControlName="check" id="checkbox" style="margin-left: -200px"
-               type="checkbox">
-        <label for="checkbox" style="margin-left: -160px">Я даю своё согласие на обработку персонаьных данных</label>
-
-        <button [disabled]="form.invalid || !check" class="btn">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+        <button [disabled]="form.invalid" class="btn">ЗАРЕГИСТРИРОВАТЬСЯ</button>
     </form>
 
     <p style="color: #939292; margin-top: 5%">Есть аккаунт? <a class="href" routerLink="login">Войти</a></p>

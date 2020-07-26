@@ -3,10 +3,10 @@ import {Contact} from '../../interface';
 
 @Component({
     selector: 'app-fotm-contact',
-    templateUrl: './fotm-contact.component.html',
-    styleUrls: ['./fotm-contact.component.scss']
+    templateUrl: './form-contact.component.html',
+    styleUrls: ['./form-contact.component.scss']
 })
-export class FotmContactComponent {
+export class FormContactComponent {
 
     @Output() onAdd = new EventEmitter<Contact>();
 
